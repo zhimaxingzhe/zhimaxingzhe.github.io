@@ -14,11 +14,11 @@
      */
   var demoContent = [
     {
-      demo_link: 'https://github.com/Shen-Xmas/Shen-Xmas.github.io',
+      demo_link: 'https://shen-xmas.github.io/',
       code_link: 'https://github.com/Shen-Xmas/Shen-Xmas.github.io',
       title: '我的博客',
       core_tech: 'JekyII, JavaScript, HTML, CSS',
-      description: '我的博客. 详情见 <a href ="https://github.com/Shen-Xmas/Shen-Xmas.github.io">这里</a>。'
+      description: '我的博客. 详情见 <a href ="https://shen-xmas.github.io/">这里</a>。'
     }
   ];
 
