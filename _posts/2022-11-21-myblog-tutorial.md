@@ -1,8 +1,23 @@
-# Shen-Xmas's Blog
+---
+layout: post
+title:  "github博客搭建"
+categories: 前端
+tags:  前端
+author: Shen-Xmas
+---
 
-个人博客项目, fork自大佬HyG。
+* content
+{:toc}
 
-做了一些个人改动。这里记录下各个文件的用途, 也帮助别的像我一样的后端迅速上手。
+博客网址为[Shen-Xmas's Blog](https://shen-xmas.github.io/)
+
+首先建立一个个人博客github仓库。其实只要把我的 [博客代码(点击跳转)](https://github.com/Shen-Xmas/Shen-Xmas.github.io/) fork下来, 仓库名改为自己的{{github.username}}.github.io就可以了。
+
+fork下来项目以后别忘了看看 代码仓库-Settings-Pages的Branch等设置好没有。
+
+然后根据以下做需要的改造即可:
+
+(Ps: 原本fork自大佬HyG, 做了一些个人改动。这里记录下各个文件的用途, 也帮助像我一样很少接触前端的后端迅速上手。)
 
 ## 1 左上角标题及简介以及下方的介绍
 
