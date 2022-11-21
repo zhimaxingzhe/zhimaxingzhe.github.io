@@ -22,7 +22,7 @@
     },{
       demo_link: 'https://github.com/Shen-Xmas/spring-boot-demo',
       code_link: 'https://github.com/Shen-Xmas/spring-boot-demo',
-      title: 'Java Spring Boot 各种demo',
+      title: 'Java Spring-Boot demos',
       core_tech: 'Java, Spring Boot, Mybatis, Rabbitmq, Dubbo, Redis, Maven, Docker ..',
       description: '适合初学者入门的一些demo, 个人的一些学习思考, 欢迎指正. 详情见 <a href ="https://github.com/Shen-Xmas/spring-boot-demo">这里</a>。'
     }
