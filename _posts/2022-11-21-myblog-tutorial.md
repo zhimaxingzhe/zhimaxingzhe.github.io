@@ -43,6 +43,7 @@ fork下来项目以后别忘了看看 代码仓库-Settings-Pages的Branch等设
 - Categories是按类别排序。
 - Tags是按照tag过滤。
 文章开头都会填写这些字段的值, 多字段直接空格隔开即可, 如:
+
 ```markdown
 ---
 layout: post
@@ -54,8 +55,8 @@ author: Shen-Xmas
 
 * content
 {:toc}
-
 ```
+
 然后接下来就可以按照markdown的格式书写内容了。
 
 ## 5 Collections
