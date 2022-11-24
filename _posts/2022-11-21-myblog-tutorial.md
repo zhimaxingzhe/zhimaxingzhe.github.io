@@ -9,15 +9,26 @@ author: Shen-Xmas
 * content
 {:toc}
 
-博客网址为[Shen-Xmas's Blog](https://shen-xmas.github.io/)
 
-首先建立一个个人博客github仓库。其实只要把我的 [博客代码(点击跳转)](https://github.com/Shen-Xmas/Shen-Xmas.github.io/) fork下来, 仓库名改为自己的{{github.username}}.github.io就可以了。
+> 样板博客网址为 [Shen-Xmas's Blog](https://shen-xmas.github.io/)
+
+## 首先搭建起一个github博客
+
+首先建立一个个人博客github仓库。其实只要把 [博客代码(点击跳转)](https://github.com/Shen-Xmas/Shen-Xmas.github.io/) fork下来, 仓库名改为自己的{{github.username}}.github.io就可以了。
 
 fork下来项目以后别忘了看看 代码仓库-Settings-Pages的Branch等设置好没有。
+
+大概等待几分钟看到settings-pages出现如下图标则表示已搭建成功, 可以通过其中的url访问了。
+
+![搭建成功的page示例](https://s3.uuu.ovh/imgs/2022/11/24/861297a7040b780f.png)
 
 然后根据以下做需要的改造即可:
 
 (Ps: 原本fork自大佬HyG, 做了一些个人改动。这里记录下各个文件的用途, 也帮助像我一样很少接触前端的后端迅速上手。)
+
+---
+
+
 
 ## 1 左上角标题及简介以及下方的介绍
 
@@ -37,6 +48,8 @@ fork下来项目以后别忘了看看 代码仓库-Settings-Pages的Branch等设
 文章都放置在_posts中, 需要按特定格式书写, 是markdown格式。
 
 ## 4 Home Archives Categories 和 Tags
+
+![tags等位置示例](https://s3.uuu.ovh/imgs/2022/11/24/139d0bfa6e825599.png)
 
 这些的展现逻辑都已经写好了, 不用动。
 - Archives是按照时间排序。
@@ -61,11 +74,15 @@ author: Shen-Xmas
 
 ## 5 Collections
 
+![Collections](https://s3.uuu.ovh/imgs/2022/11/24/140a871affd7855b.png)
+
 算是收藏集合, 位于/page/3collections.md
 
 直接在中间内容部分按照markdown形式更改即可。一般使用简介+链接的形式记录。
 
 ## 6 Demo
+
+![demo](https://s3.uuu.ovh/imgs/2022/11/24/b75a0c5c84040aff.png)
 
 主要用来介绍自己一些项目的地方。为了简单我的已经把图片展示去掉了。主要留文字简介和链接。
 
