@@ -6,7 +6,7 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: zhimaxingzhe
+title: ZhiMaXingZhe
 brief-intro: Java
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://zhimaxingzhe.github.io/" # the base hostname & protocol for your site
@@ -14,7 +14,7 @@ url: "https://zhimaxingzhe.github.io/" # the base hostname & protocol for your s
 permalink: /:year/:month/:day/:title/
 
 # other links
-github_username: zhimaxingzhe
+github_username: ZhiMaXingZhe
 email: 1010356846@qq.com
 
 description_footer: 争名夺利几时休？早起迟眠不自由！ 骑着驴骡思骏马，官居宰相望王侯。 只愁衣食耽劳碌，何怕阎君就取勾？ 继子荫孙图富贵，更无一个肯回头！ 人生艰苦得百年，总有甘甜入心喉。                    
@@ -22,7 +22,7 @@ description_footer: 争名夺利几时休？早起迟眠不自由！ 骑着驴�
 # comments
 # two ways to comment, only choose one, and use your own short name
 # 两种评论插件，选一个就好了，使用自己的 short_name
-duoshuo_shortname: #zhimaxingzhe
+duoshuo_shortname: #ZhiMaXingZhe
 disqus_shortname: gaohaoyang
 
 # statistic analysis 统计代码
