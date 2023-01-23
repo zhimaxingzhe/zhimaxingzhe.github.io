@@ -3,18 +3,18 @@ layout: post
 title:  "github博客搭建"
 categories: 前端
 tags:  前端
-author: Shen-Xmas
+author: zhimaxingzhe
 ---
 
 * content
 {:toc}
 
 
-> 样板博客网址为 [Shen-Xmas's Blog](https://shen-xmas.github.io/)
+> 样板博客网址为 [zhimaxingzhe's Blog](https://zhimaxingzhe.github.io/)
 
 ## 首先搭建起一个github博客
 
-首先建立一个个人博客github仓库。其实只要把 [博客代码(点击跳转)](https://github.com/Shen-Xmas/Shen-Xmas.github.io/) fork下来, 仓库名改为自己的{{github.username}}.github.io就可以了。
+首先建立一个个人博客github仓库。其实只要把 [博客代码(点击跳转)](https://github.com/zhimaxingzhe/zhimaxingzhe.github.io/) fork下来, 仓库名改为自己的{{github.username}}.github.io就可以了。
 
 fork下来项目以后别忘了看看 代码仓库-Settings-Pages的Branch等设置好没有。
 
@@ -63,7 +63,7 @@ layout: post
 title:  "填写需要的标题"
 categories: Java Python Golang
 tags:  Java Python Golang
-author: Shen-Xmas
+author: zhimaxingzhe
 ---
 
 * content
@@ -89,11 +89,11 @@ author: Shen-Xmas
 更改位置是/js/waterfall.js。在demoContent变量中增减值即可。按照字段内容填写。
 ```
 {
-  demo_link: 'https://github.com/Shen-Xmas/spring-boot-demo',
-  code_link: 'https://github.com/Shen-Xmas/spring-boot-demo',
+  demo_link: 'https://github.com/zhimaxingzhe/spring-boot-demo',
+  code_link: 'https://github.com/zhimaxingzhe/spring-boot-demo',
   title: 'Java Spring-Boot demos',
   core_tech: 'Java, Spring Boot, 各种中间件 ..',
-  description: '适合初学者入门的一些demo, 个人的一些学习思考, 欢迎指正. 详情见 <a href ="https://github.com/Shen-Xmas/spring-boot-demo">这里</a>。'
+  description: '适合初学者入门的一些demo, 个人的一些学习思考, 欢迎指正. 详情见 <a href ="https://github.com/zhimaxingzhe/spring-boot-demo">这里</a>。'
 }
 ```
 
