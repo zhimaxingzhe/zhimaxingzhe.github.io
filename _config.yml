@@ -6,31 +6,31 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Shen-Xmas
-brief-intro: Java / Golang / Python
+title: zhimaxingzhe
+brief-intro: Java
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://shen-xmas.github.io/" # the base hostname & protocol for your site
+url: "https://zhimaxingzhe.github.io/" # the base hostname & protocol for your site
 
 permalink: /:year/:month/:day/:title/
 
 # other links
-github_username: Shen-Xmas
-email: navidadshen@foxmail.com
+github_username: zhimaxingzhe
+email: 1010356846@qq.com
 
-description_footer: 一些学习和思考, 希望可以做好一些事。                    
+description_footer: 争名夺利几时休？早起迟眠不自由！ 骑着驴骡思骏马，官居宰相望王侯。 只愁衣食耽劳碌，何怕阎君就取勾？ 继子荫孙图富贵，更无一个肯回头！ 人生艰苦得百年，总有甘甜入心喉。                    
 
 # comments
 # two ways to comment, only choose one, and use your own short name
 # 两种评论插件，选一个就好了，使用自己的 short_name
-duoshuo_shortname: #shen-xmas
+duoshuo_shortname: #zhimaxingzhe
 disqus_shortname: gaohaoyang
 
 # statistic analysis 统计代码
 # 百度统计 id，将统计代码替换为自己的百度统计id，即
 # hm.src = "//hm.baidu.com/hm.js?xxxxxxxxxxxx";
 # xxxxx字符串
-baidu_tongji_id: cf8506e0ef223e57ff6239944e5d46a4
-google_analytics_id: UA-72449510-4 # google 分析追踪id
+baidu_tongji_id: cd0a94197c0c252367ee3c99b601e93a
+# google_analytics_id: UA-72449510-4 # google 分析追踪id
 
 # Build settings
 markdown: kramdown

@@ -12,8 +12,8 @@ type: page
 
 ## 联系我
 
-* GitHub：[Shen-Xmas](https://github.com/Shen-Xmas)
-* email：navidadshen@foxmail.com
+* GitHub：[zhimaxingzhe](https://github.com/zhimaxingzhe)
+* email：1010356846@qq.com
 
 
 ## Comments
