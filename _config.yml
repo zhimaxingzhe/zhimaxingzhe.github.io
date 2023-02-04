@@ -22,8 +22,8 @@ description_footer: 争名夺利几时休？早起迟眠不自由！ 骑着驴�
 # comments
 # two ways to comment, only choose one, and use your own short name
 # 两种评论插件，选一个就好了，使用自己的 short_name
-duoshuo_shortname: hygblog
-disqus_shortname: # zhimaxingzhe
+duoshuo_shortname: #hygblog
+disqus_shortname: gaohaoyang
 
 # statistic analysis 统计代码
 # 百度统计 id，将统计代码替换为自己的百度统计id，即

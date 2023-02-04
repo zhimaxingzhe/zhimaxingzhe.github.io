@@ -9,7 +9,7 @@ link: https://zhimaxingzhe.github.io/
 
 * content
 {:toc}
-> by zhimaxingzhe from [消息中间件基础知识-从RabbitMQ、RocketMQ、Kafka到Pulsar](https://zhimaxingzhe.github.io/2023/01/26/%E6%B6%88%E6%81%AF%E4%B8%AD%E9%97%B4%E4%BB%B6%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/) 欢迎分享链接，转载请注明出处，尊重版权，若急用请联系授权。 [https://zhimaxingzhe.github.io](https://zhimaxingzhe.github.io)
+> by zhimaxingzhe from [消息中间件基础知识-从RabbitMQ、RocketMQ、Kafka到Pulsar](https://zhimaxingzhe.github.io/2023/01/26/消息中间件基础知识-从RabbitMQ、RocketMQ、Kafka到Pulsar/) 欢迎分享链接，转载请注明出处，尊重版权，若急用请联系授权。 [https://zhimaxingzhe.github.io](https://zhimaxingzhe.github.io)
 
 
 # 前言

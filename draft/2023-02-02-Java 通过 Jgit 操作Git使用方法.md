@@ -1,3 +1,17 @@
+---
+layout: post
+title:  "Java 通过 Jgit 操作Git使用方法"
+categories: Java
+tags:  Java
+author: zhimaxingzhe
+link: https://zhimaxingzhe.github.io/
+---
+
+* content
+{:toc}
+> by zhimaxingzhe from [Java 通过 Jgit 操作Git使用方法](https://zhimaxingzhe.github.io/2023/02/02/Java 通过 Jgit 操作Git使用方法/) 欢迎分享链接，转载请注明出处，尊重版权，若急用请联系授权。 [https://zhimaxingzhe.github.io](https://zhimaxingzhe.github.io)
+
+
 # 前言
 Java 社区操作与GIT交互的最好组件应该就是Jgit了，目前没找到更好的，JGit是实现Git版本控制系统的纯Java库。 这是一个Eclipse项目，最初是EGit的Git库，它提供了与Eclipse的Git集成。 同时，JGit还有更多采用者，例如Gerrit，GitBlit，Jenkins的GitClient插件。近期在做配置文件发布功能时用到了，学习了Jgit的使用，做一下分享。若有助益，请一键三连吧🤝。
 
