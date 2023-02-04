@@ -20,7 +20,6 @@ fork下来项目以后别忘了看看 代码仓库-Settings-Pages的Branch等设
 
 大概等待几分钟看到settings-pages出现如下图标则表示已搭建成功, 可以通过其中的url访问了。
 
-![搭建成功的page示例](https://s3.uuu.ovh/imgs/2022/11/24/861297a7040b780f.png)
 
 然后根据以下做需要的改造即可:
 
