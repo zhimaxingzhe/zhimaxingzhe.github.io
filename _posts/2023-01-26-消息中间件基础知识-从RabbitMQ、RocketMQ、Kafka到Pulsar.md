@@ -10,7 +10,7 @@ link: https://zhimaxingzhe.github.io/
 * content
 {:toc}
 本文梳理笔者的MQ知识，从消息中间件的基础知识讲起，在有了基础知识后，对市面上各主流的消息中间件进行详细的解析，包括 RabbitMQ、RocketMQ、Kafka、Pulsar，最后再横向对比这几款主流的消息中间件。
-
+![发展历史](https://zhimaxingzhe.github.io/image/mq/前言-发展历史.png)
 
 
 
@@ -24,7 +24,6 @@ link: https://zhimaxingzhe.github.io/
 
 最好的学习方法是带着问题去寻找答案，以费曼学习法为标准，产出可教学的资料，所以本文多是个人的所学梳理和所想记录，个人只是有限，难免有所疏漏，文中有错误和疏漏请不吝赐教，感谢🫶！若有帮助，请一键三连吧🤝。文中许多图片内容是随笔摘抄，若有冒犯，侵删🤝。
 
-![发展历史](https://zhimaxingzhe.github.io/image/mq/前言-发展历史.png)
 
 消息中间件的发展已经有近40年历史，早在上个世纪80年代就诞生了第一款消息队列 The Information Bus。
 
