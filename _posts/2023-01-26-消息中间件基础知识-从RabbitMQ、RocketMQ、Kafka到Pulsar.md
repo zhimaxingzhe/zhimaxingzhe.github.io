@@ -9,12 +9,13 @@ link: https://zhimaxingzhe.github.io/
 
 * content
 {:toc}
-> by zhimaxingzhe from [消息中间件基础知识-从RabbitMQ、RocketMQ、Kafka到Pulsar](https://zhimaxingzhe.github.io/2023/01/26/消息中间件基础知识-从RabbitMQ、RocketMQ、Kafka到Pulsar/) 欢迎分享链接，转载请注明出处，尊重版权，若急用请联系授权。 [https://zhimaxingzhe.github.io](https://zhimaxingzhe.github.io)
 本文梳理笔者的MQ知识，从消息中间件的基础知识讲起，在有了基础知识后，对市面上各主流的消息中间件进行详细的解析，包括 RabbitMQ、RocketMQ、Kafka、Pulsar，最后再横向对比这几款主流的消息中间件。
 
 
 
 
+
+> by zhimaxingzhe from [消息中间件基础知识-从RabbitMQ、RocketMQ、Kafka到Pulsar](https://zhimaxingzhe.github.io/2023/01/26/消息中间件基础知识-从RabbitMQ、RocketMQ、Kafka到Pulsar/) 欢迎分享链接，转载请注明出处，尊重版权，若急用请联系授权。 [https://zhimaxingzhe.github.io](https://zhimaxingzhe.github.io)
 
 # 前言
 本文梳理笔者的MQ知识，从消息中间件的基础知识讲起，在有了基础知识后，对市面上各主流的消息中间件进行详细的解析，包括 RabbitMQ、RocketMQ、Kafka、Pulsar，最后再横向对比这几款主流的消息中间件。
