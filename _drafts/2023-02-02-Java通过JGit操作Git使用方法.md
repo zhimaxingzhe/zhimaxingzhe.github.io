@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Java 通过 Jgit 操作Git使用方法"
+title:  "Java通过JGit操作Git的使用方法"
 categories: Java
 tags:  Java
 author: zhimaxingzhe
@@ -9,28 +9,29 @@ link: https://zhimaxingzhe.github.io/
 
 * content
 {:toc}
-> by zhimaxingzhe from [Java 通过 Jgit 操作Git使用方法](https://zhimaxingzhe.github.io/2023/02/02/Java 通过 Jgit 操作Git使用方法/) 欢迎分享链接，转载请注明出处，尊重版权，若急用请联系授权。 [https://zhimaxingzhe.github.io](https://zhimaxingzhe.github.io)
+> by zhimaxingzhe from [Java通过JGit操作Git的使用方法](https://zhimaxingzhe.github.io/2023/02/02/Java通过JGit操作Git的使用方法/) 欢迎分享链接，转载请注明出处，尊重版权，若急用请联系授权。 [https://zhimaxingzhe.github.io](https://zhimaxingzhe.github.io)
 
 
 # 前言
-Java 社区操作与GIT交互的最好组件应该就是Jgit了，目前没找到更好的，JGit是实现Git版本控制系统的纯Java库。 这是一个Eclipse项目，最初是EGit的Git库，它提供了与Eclipse的Git集成。 同时，JGit还有更多采用者，例如Gerrit，GitBlit，Jenkins的GitClient插件。近期在做配置文件发布功能时用到了，学习了Jgit的使用，做一下分享。若有助益，请一键三连吧🤝。
+Java 社区操作与GIT交互的最好组件应该就是JGit了，目前没找到更好的，JGit是实现Git版本控制系统的纯Java库。 这是一个Eclipse项目，最初是EGit的Git库，它提供了与Eclipse的Git集成。 同时，JGit还有更多采用者，例如Gerrit，GitBlit，Jenkins的GitClient插件。近期在做配置文件发布功能时用到了，学习了JGit的使用，做一下分享。若有助益，请一键三连吧🤝。
+![封面-宽.png](https://zhimaxingzhe.github.io/image/jgit/封面-宽.png)  
 
 与GIT交互如何做？最早我想通过在服务器上安装git客户端，在Java代码中执行shell命令的方式来实现对git的操作，这样一来非常灵活，代码都写好了（见文末）。但这样与GIT交互开发、调试工作量巨大，且部署需要运维做较多工作，且存在安全问题，对权限的控制要求严格。
-后来找到Jgit，了解到Jgit 可以不依赖服务器安装 git client 即可对 GIT 进行操作，而且对GIT的绝大部分操作都封装好了API，真是太适合我的场景了。
+后来找到JGit，了解到JGit 可以不依赖服务器安装 git client 即可对 GIT 进行操作，而且对GIT的绝大部分操作都封装好了API，真是太适合我的场景了。
 
 # 一、导入依赖
 
 当前最新的版本是6.4.0版本，而且是JDK 11编译版本，要求JDK 是11及其以上版本才行，如果是JDK 8 得找旧版本的，比如5.13版本，可能有漏洞风险，要视情况来使用。截稿前5.13版本没看到有漏洞风险，可以使用。
 ```
 <dependency>
-    <groupId>org.eclipse.jgit</groupId>
-    <artifactId>org.eclipse.jgit</artifactId>
+    <groupId>org.eclipse.JGit</groupId>
+    <artifactId>org.eclipse.JGit</artifactId>
     <version>6.4.0.202210260700-m2</version>
 </dependency>
 
 <dependency>
-    <groupId>org.eclipse.jgit</groupId>
-    <artifactId>org.eclipse.jgit</artifactId>
+    <groupId>org.eclipse.JGit</groupId>
+    <artifactId>org.eclipse.JGit</artifactId>
     <version>5.13.1.202206130422-r</version>
 </dependency>
 ```
@@ -73,7 +74,7 @@ git add README.md
 git commit -m 'add README.md'
 git push -u origin master
 ```
-对应的，通过Jgit是如何操作的呢？直接上代码
+对应的，通过JGit是如何操作的呢？直接上代码
 ```java
 // 克隆远程仓库到本地
 Git git = Git.cloneRepository().setURI("https://github.com/zhimaxingzhe/test.git").setTimeout(90)
@@ -107,7 +108,7 @@ Git git = Git.cloneRepository().setURI(GIT_URL).setDirectory(new File("/Users/zh
 ```
 
 ## 3、身份认证
-上面的例子中都有用到用户名密码做身份验证，所以顺着讲一下身份认证。在做远程仓库操作是需要身份认证，如执行pull、push、clone操作时。和git交互一样，身份认证Jgit 支持两种方式，一种是HTTP(S)账号+密码的方式，一种是通过SSH协议使用公钥认证。
+上面的例子中都有用到用户名密码做身份验证，所以顺着讲一下身份认证。在做远程仓库操作是需要身份认证，如执行pull、push、clone操作时。和git交互一样，身份认证JGit 支持两种方式，一种是HTTP(S)账号+密码的方式，一种是通过SSH协议使用公钥认证。
 HTTP(S)账号+密码：
 ```java
 // 账号 + 密码
@@ -364,8 +365,8 @@ MergeResult mergeResult = git.merge().include(refdev)  // 合并源头分支到�
 ```
 
 # 三、源码学习
-## 1、Jgit pull 源码阅读
-pull 实际上是 fetch、merge两个操作的组合，那么在Jgit 源码中这也是执行了这两个操作，带着这样的预期进入方法中，看到关键步骤：
+## 1、JGit pull 源码阅读
+pull 实际上是 fetch、merge两个操作的组合，那么在JGit 源码中这也是执行了这两个操作，带着这样的预期进入方法中，看到关键步骤：
 ```java
 FetchCommand fetch = new FetchCommand(repo).setRemote(remote)
         .setProgressMonitor(monitor).setTagOpt(tagOption)
@@ -384,12 +385,12 @@ MergeResult mergeRes = merge.include(upstreamName, commitToMerge)
 monitor.update(1);
 result = new PullResult(fetchRes, remote, mergeRes);
 ```
-## 2、Jgit clone 源码阅读
-Jgit 是可以不依赖服务器安装 git client 即可对 GIT 进行操作的，是如何做到的呢？带着这个疑问从 Jgit 的 clone()方法 源码开始寻找答案。
+## 2、JGit clone 源码阅读
+JGit 是可以不依赖服务器安装 git client 即可对 GIT 进行操作的，是如何做到的呢？带着这个疑问从 JGit 的 clone()方法 源码开始寻找答案。
 通常git仓库的目录结构是这样的
 
 ![git init](/image/jgit/git_init.png)  
-Jgit也是创建了这些目录和文件。
+JGit也是创建了这些目录和文件。
 clone 的关键代码步骤：
 1、创建各种目录和文件
 
@@ -415,7 +416,7 @@ co.setProgressMonitor(monitor);
 co.checkout();
 ```
 
-## 3、Jgit push 源码阅读
+## 3、JGit push 源码阅读
 git push命令用于将本地分支的更新，推送到远程主机。它的格式与git pull命令相仿。
 分支推送顺序的写法是<来源地>:<目的地>，所以git pull是<远程分支>:<本地分支>，而git push是<本地分支>:<远程分支>。
 如果省略远程分支名，则表示将本地分支推送与之存在”追踪关系”的远程分支(通常两者同名)，如果该远程分支不存在，则会被新建。
@@ -431,11 +432,11 @@ return pushProcess.execute(monitor);
 ```
 pushProcess.execute(monitor) 方法这里面太复杂了，晚点再学🤦‍♂️。
 
-其他的API还有很多值得研读的，比如 commit 是如何操作工作区和本地仓库的，很多命令带上参数在Jgit上能否对应实现，又是如何实现对应操作的，比如 checkout 带上 setCreateBranch是如何实现分支的创建的，带着对git的理解看源码，既可以了解Jgit的实现，通过Jgit API 中的代码实现以及很多边界条件的考虑，还可以加深对git本身的了解。
+其他的API还有很多值得研读的，比如 commit 是如何操作工作区和本地仓库的，很多命令带上参数在JGit上能否对应实现，又是如何实现对应操作的，比如 checkout 带上 setCreateBranch是如何实现分支的创建的，带着对git的理解看源码，既可以了解JGit的实现，通过JGit API 中的代码实现以及很多边界条件的考虑，还可以加深对git本身的了解。
 
 
 
-还有更多介绍可以查看[Jgit 官方主页](https://www.eclipse.org/jgit/) [Jgit官方API文档](https://wiki.eclipse.org/JGit/User_Guide)  [Jgit Support ](https://www.eclipse.org/jgit/support/)
+还有更多介绍可以查看[JGit 官方主页](https://www.eclipse.org/jgit/) [JGit官方API文档](https://wiki.eclipse.org/jgit/User_Guide)  [JGit Support ](https://www.eclipse.org/jgit/support/)
 
 ## 附加信息
 
