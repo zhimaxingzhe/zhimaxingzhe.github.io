@@ -14,7 +14,7 @@ link: https://zhimaxingzhe.github.io/
 
 # 前言
 Java 社区操作与GIT交互的最好组件应该就是JGit了，目前没找到更好的，JGit是实现Git版本控制系统的纯Java库。 这是一个Eclipse项目，最初是EGit的Git库，它提供了与Eclipse的Git集成。 同时，JGit还有更多采用者，例如Gerrit，GitBlit，Jenkins的GitClient插件。近期在做配置文件发布功能时用到了，学习了JGit的使用，做一下分享。若有助益，请一键三连吧🤝。
-![封面-宽.png](https://zhimaxingzhe.github.io/image/jgit/封面-宽.png)  
+![封面-宽.png](https://zhimaxingzhe.github.io/image/jgit/封面.png)  
 
 与GIT交互如何做？最早我想通过在服务器上安装git客户端，在Java代码中执行shell命令的方式来实现对git的操作，这样一来非常灵活，代码都写好了（见文末）。但这样与GIT交互开发、调试工作量巨大，且部署需要运维做较多工作，且存在安全问题，对权限的控制要求严格。
 后来找到JGit，了解到JGit 可以不依赖服务器安装 git client 即可对 GIT 进行操作，而且对GIT的绝大部分操作都封装好了API，真是太适合我的场景了。
