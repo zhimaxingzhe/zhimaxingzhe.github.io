@@ -28,7 +28,12 @@ Caused by: org.eclipse.jgit.errors.TransportException: git@git.xxx.com:/xxxx.git
         at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:235)
 ```
 
-在于远程仓库做身份验证时模式无法匹配。
+在于远程仓库交互做身份验证时模式无法匹配，Jgit用https的身份认证方式操作了ssh模式的本地仓库。
+
+
+
+
+
 
 # 问题解决
 既然是被设置为 ssh 方式，应对方式有两种方式，方法一是将服务器上本地 git 仓库改为 https 模式，方法二是代码中做校验，根据仓库类型再选择对应的认证方式。 
@@ -74,6 +79,5 @@ git.pull().setTransportConfigCallback(
 
 参考资料：   
 [jgit-cookbook](https://github.com/centic9/jgit-cookbook)
-
 
 > by zhimaxingzhe from [Jgit pull or push remote hung up unexpectedly 的解决](https://zhimaxingzhe.github.io/2023/02/25/Jgit-pull-or-push-remote-hung-up-unexpectedly/) 欢迎分享链接，转载请注明出处，尊重版权，若急用请联系授权。 [https://zhimaxingzhe.github.io](https://zhimaxingzhe.github.io)
