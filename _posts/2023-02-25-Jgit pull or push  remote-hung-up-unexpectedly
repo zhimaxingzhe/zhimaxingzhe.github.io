@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Jgit pull or push remote hung up unexpectedly 的解决"
+title:  "Jgit pull or push remote hung up unexpectedly 的解决c"
 categories: Java工具
 tags:  Java工具
 author: zhimaxingzhe
@@ -74,3 +74,6 @@ git.pull().setTransportConfigCallback(
 
 参考资料：   
 [jgit-cookbook](https://github.com/centic9/jgit-cookbook)
+
+
+> by zhimaxingzhe from [Jgit pull or push remote hung up unexpectedly 的解决](https://zhimaxingzhe.github.io/2023/02/25/Jgit-pull-or-push-remote-hung-up-unexpectedly/) 欢迎分享链接，转载请注明出处，尊重版权，若急用请联系授权。 [https://zhimaxingzhe.github.io](https://zhimaxingzhe.github.io)
