@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Java通过JGit操作Git的使用方法"
-categories: Java
-tags:  Java
+categories: Java工具
+tags:  Java工具
 author: zhimaxingzhe
 link: https://zhimaxingzhe.github.io/
 ---
@@ -19,7 +19,7 @@ Java 社区操作与GIT交互的最好组件应该就是JGit了，目前没找�
 与GIT交互如何做？最早我想通过在服务器上安装git客户端，在Java代码中执行shell命令的方式来实现对git的操作，这样一来非常灵活，代码都写好了（见文末）。但这样与GIT交互开发、调试工作量巨大，且部署需要运维做较多工作，且存在安全问题，对权限的控制要求严格。
 后来找到JGit，了解到JGit 可以不依赖服务器安装 git client 即可对 GIT 进行操作，而且对GIT的绝大部分操作都封装好了API，真是太适合我的场景了。
 
-
+此外，通过Jgit 直接操作Github，做成自己日常的工具，比如写博客，想要定时发布到Github上，则可以通过自己写代码实现啦。
 
 
 
@@ -112,7 +112,7 @@ Git git = Git.cloneRepository().setURI(GIT_URL).setDirectory(new File("/Users/zh
 ```
 
 ## 3、身份认证
-上面的例子中都有用到用户名密码做身份验证，所以顺着讲一下身份认证。在做远程仓库操作是需要身份认证，如执行pull、push、clone操作时。和git交互一样，身份认证JGit 支持两种方式，一种是HTTP(S)账号+密码的方式，一种是通过SSH协议使用公钥认证。
+上面的例子中都有用到用户名密码做身份验证，所以顺着讲一下身份认证。在做远程仓库操作是需要身份认证，如执行pull、push、clone操作时。和git交互一样，身份认证JGit 支持两种方式，一种是HTTP(S)账号+密码的方式，一种是通过SSH协议使用公钥认证。  
 HTTP(S)账号+密码：
 ```java
 // 账号 + 密码
@@ -131,7 +131,7 @@ SshSessionFactory sshSessionFactory = new JschConfigSessionFactory() {
     @Override
     protected JSch createDefaultJSch(FS fs) throws JSchException {
         JSch sch = super.createDefaultJSch(fs);
-        //keyPath 私钥文件 path
+        //keyPath 公钥文件 path
         sch.addIdentity(keyPath);
         return sch;
     }
@@ -393,7 +393,7 @@ result = new PullResult(fetchRes, remote, mergeRes);
 JGit 是可以不依赖服务器安装 git client 即可对 GIT 进行操作的，是如何做到的呢？带着这个疑问从 JGit 的 clone()方法 源码开始寻找答案。
 通常git仓库的目录结构是这样的
 
-![git init](/image/jgit/git_init.png)  
+![git init](https://zhimaxingzhe.github.io/image/jgit/git_init.png)  
 JGit也是创建了这些目录和文件。
 clone 的关键代码步骤：
 1、创建各种目录和文件
@@ -508,3 +508,8 @@ public class Test {
     }
 }
 ``` 
+
+
+
+参考材料：  
+[jgit-cookbook](https://github.com/centic9/jgit-cookbook) 这个仓库种包含了操作 Jgit 的丰富样例，很赞。
