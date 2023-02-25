@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Jgit pull or push remote hung up unexpectedly 的解决c"
+title:  "Jgit pull or push remote hung up unexpectedly 的解决"
 categories: Java工具
 tags:  Java工具
 author: zhimaxingzhe
